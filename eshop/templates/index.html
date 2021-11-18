@@ -67,20 +67,20 @@
 
                         {% with total_items=cart|length %} {% if total_items > 0 %}
 
-                            <li class="nav-item">
-                                <a class="nav-link" href="{% url 'cart:cart_detail' %}">
-                                    <i class="fa fa-shopping-cart cart " data-toggle="tooltip" data-placement="bottom" data-original-title="Tooltip on bottom" class="red-tooltip" title="{{ total_items }} item{{ total_items|pluralize }},${{ cart.get_total_price }}" aria-hidden="true"></i>
-                                </a>
-                            </li>
-
-
-                            {% else %}
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    <i class="fa fa-shopping-cart cart " data-toggle="tooltip" data-placement="bottom" data-original-title="Tooltip on bottom" class="red-tooltip" title="No Product in the Cart" aria-hidden="true"></i>
-                                </a>
-                            </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'cart:cart_detail' %}">
+                                <i class="fa fa-shopping-cart cart " data-toggle="tooltip" data-placement="bottom" data-original-title="Tooltip on bottom" class="red-tooltip" title="{{ total_items }} item{{ total_items|pluralize }},${{ cart.get_total_price }}" aria-hidden="true"></i>
+                            </a>
+                        </li>
+    
+    
+                        {% else %}
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa fa-shopping-cart cart " data-toggle="tooltip" data-placement="bottom" data-original-title="Tooltip on bottom" class="red-tooltip" title="No Product in the Cart" aria-hidden="true"></i>
+                            </a>
+                        </li>
                         {% endif %} {% endwith %}
                         <li class="nav-item">
                             <a class="nav-link" href="#">
@@ -307,7 +307,7 @@
                             <div class="is-divider small" style="
                               background-color: rgba(255, 255, 255, 0.3) !important;
                             "></div>
-                            <p>support@gailaly.store</p>
+                            <p>support@ muntasir690000@gmail.com</p>
                             <hr style="border-color: rgba(255, 255, 255, 0.08)" />
                             <p>Contact Us</p>
                         </div>
@@ -320,7 +320,7 @@
                     <div class="row">
                         <div class="col-md-6 mt-3 mb-4">
                             <p style="color: #fff">
-                                Copyright 2021 © www.gailaly.store
+                                Copyright 2021 © muntasir690000@gmail.com
                             </p>
                         </div>
                         <div class="col-md-6 mt-3 mb-6">

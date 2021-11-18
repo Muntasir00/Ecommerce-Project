@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'eshop.apps.EshopConfig',
     'cart.apps.CartConfig',
     'seller.apps.SellerConfig',
+    'orders.apps.OrdersConfig',
 ]
 
 MIDDLEWARE = [
@@ -72,6 +73,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'cart.context_processors.cart',
             ],
         },
     },
@@ -109,7 +111,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
+CART_SESSION_ID = 'cart'
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
